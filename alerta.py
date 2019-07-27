@@ -1,3 +1,9 @@
+"""
+This tool in form of Jython script alerta.py, in an automatic manner, updates rainfall forecast (for example for upcoming 24 hours)
+by reading content of text files; conducts simulations; predicts the catchment response, and sends alert mail when there is an 
+exceeding the limit set by relevant authorities.
+"""
+
 # Import the modules needed to run the script.
 from hec.script import *
 from hec.heclib.dss import *
