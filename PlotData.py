@@ -2,7 +2,6 @@
 This script plots flow data which is already recorded in HEC-DSSVue. The script returns a hydrograph from a selected record.
 """
 
-
 #module importation
 from py4j.java_gateway import *
 from pandas import *
