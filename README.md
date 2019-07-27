@@ -4,3 +4,5 @@ This repository contains didactic examples of a management of HEC-HMS in batch m
 
 Generally, the tool aims to conduct specified simulation, in a specified flood model by HEC-HMS after introducing new 24 hours rainfall data in text files and send alerts about flow rates via email. Simultaneously, it allows prediction of a basin response quickly and issue a warning about a certain danger related to the peak flows. This alert can be used to manage operations of a reservoir coupled with flood
 models, to prepare a zone for emergency response to a flood event.
+
+More information in NowiczTFM.pdf file
