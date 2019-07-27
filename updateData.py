@@ -1,5 +1,5 @@
 """
-This script update rainfall data records in HEC-DSS database.
+This script update rainfall data records in HEC-DSS database using ListSelection class.
 
 Firstly, we create Main Window. Secondly, we open the DSS file Project.dss, and we read data from the specified record. Then, a new matrix
 with actual rainfall data is generated. With set_field function, the data is updated. Finally, save function saves the data container in 
