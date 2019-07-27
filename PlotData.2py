@@ -1,0 +1,32 @@
+"""
+This is a version of PlotData.py script using two functions
+"""
+
+# modules importation
+from py4j.java_gateway import JavaGateway, get_field
+import pandas as pd
+import numpy as np
+import matplotlib.pylab as pylab
+%matplotlib inline
+gateway = JavaGateway()
+jhec = gateway.jvm.hec
+
+#definition of functions
+
+def extractTSC(dssfile, path):
+ record = dssfile.get(path, True)
+ def convert_time(t):
+ return np.datetime64(int(t*60), 's', )
+ times = pd.DatetimeIndex(data=[convert_time(t) for t in /
+ get_field(record, "times")], name="DateTime")
+ values = [v for v in get_field(record,"values")]
+ return pd.TimeSeries(values, index=times)
+ 
+def extractPDC(dssfile, path):
+ return pd.DataFrame(data, index=xOrds, columns=colNames)
+ 
+ 
+# main script code
+dssFile = openDSSFile("C:/Project.dss")
+ts = extractTSC(dssFile, "//JUNCTION/FLOW/31DEC1999/5MIN/RUN:RUN1/")
+ts.plot()
